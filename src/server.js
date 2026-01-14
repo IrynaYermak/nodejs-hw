@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(logger);
 app.use(express.json());
-app.use(cors({ methods: ['GET', 'POST', 'PUTCH', 'DELETE', 'OPTIONS'] }));
-app.use(helmet());
+app.use(cors({ methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'] }));
+// app.use(helmet());
 
 app.use(notesRoutes);
 
